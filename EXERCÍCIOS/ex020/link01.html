@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+        }
+        a:visited {
+            color: darkgoldenrod;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: greenyellow;
+        }
+        a:active {
+            color: blue;
+        }
+        a::after {
+            content:'   [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: crimson;
+        }
+        a::before {
+            content:'→';
+        }
+        #especial {
+            color: red;
+        }
+        .basico {
+            text-align: center;
+        }
+        .basico > p {
+            color: yellow;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>trabalhando com links</h1>
+    <ul>
+        <li id="especial"><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">link 01</a>
+        <li class="basico"><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">link 02</a>
+        <li class="basico"><a href="https://www.cursoemvideo.com" target="_blank" rel="external">link 03</a> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint pariatur sapiente? Saepe, sapiente non harum, suscipit assumenda deleniti aperiam repellendus nemo quas vitae nesciunt dolore hic provident repudiandae pariatur.</p>
+
+    </ul>
+
+
+
+
+</body>
+</html>
