@@ -10,6 +10,13 @@
     font-style: normal;
 }
 
+:root {
+    --font0: 'Passion One';
+    --font1: 'Sriracha';
+    --font2: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 body {
     background-color: rgb(108, 128, 132);
     min-height: 100vh
@@ -22,13 +29,13 @@ header {
     padding: 50px 0px;
 }
 header h1 {
-    font-family: 'Passion One';
+    font-family: var(--font0);
     font-weight:bold;
-    font-size: 4em;
+    font-size: 5vw;
 }
 a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
     font-weight:bolder;
 }
 
@@ -36,7 +43,7 @@ a:hover {
     text-decoration: underline;
 }
 header p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
     font-weight: normal;
 }
 
@@ -49,21 +56,24 @@ main {
 }
 
 section {
-    font-size: 1.25em;
+    font-size: 1.5vw;
     font-weight: bold;
-    line-height: 2.5em;
+    line-height: 2em;
     padding: 10vh 30px;
 }
 .imagem {
     background-image: url(d012/imagens/background001.jpg);
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     background-color: rgb(84, 84, 84);
     color:white;
 }
 .imagem p {
     background-color: rgba(0, 0, 0, 0.257);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
